@@ -1,0 +1,208 @@
+Pengenalan Git, Gitlab - Github.html
+
+1. Git
+    
+   1.pengenalan
+     Git adalah singkatan dari Group Inclusive Tour. Git merupakan version control system yang gratis dan juga open source. Git dirancang untuk menangani segala project baik itu project besar atau project sederhana. Git memungkinkan para pengembang untuk bekerja secara bersama-sama pada proyek yang sama dan melacak setiap perubahan yang dilakukan pada source code. Terdapat 2 sistem git, yaitu centralized dan distributed:
+   ● Centralized
+
+Git centralized berkerja hanya dengan menggunakan satu server yang berfungsi untuk menyimpan data dari project. Sistem git ini membutuhkan koneksi network untuk dapat mengakses data dari project. Selain itu, ketika terjadi sesuatu pada server seperti server corrupt, maka data project yang ada di dalam server akan berpotensi untuk hilang juga.
+
+   ● Distributed
+
+Git distributed bekerja dengan menyimpan data project di lokal dan juga di server. Sehingga lebih aman ketika terjadi sesuatu pada server seperti server corrupt karena sudah terdapat backup dari data project di lokal. 
+
+  2. Fitur-Fitur Git
+   ● Version control
+    Git menyimpan setiap perubahan yang diubah pada source code, sehingga memungkinkan pengguna untuk memantau dan mengelola code version yang berbeda.
+
+   ● Git Branch
+    Branch merupakan fitur yang paling sering digunakan dalam version control system. Branch digunakan ketika developer akan menambahkan fitur baru atau memperbaiki bug. Fungsi utama dari branch ialah agar pada saat penambahan fitur baru tidak mengganggu source code utama. Ketika pengerjaan dari fitur baru sudah diselesaikan dan sudah di testing, maka branch feature akan dimerge ke dalam branch master/main.
+
+   ● Merging
+   Git memungkinkan pengguna yang telah selesai mendevelop code dan sudah melakukan testing pada branch baru untuk menggabungkan perubahan yang telah dibuat ke branch utama.
+
+   ● Staging area
+Git memiliki staging area, di mana pengguna dapat memilih perubahan mana yang akan di-commit ke repository.
+
+● Git Rebase
+Git rebase digunakan untuk menggabungkan atau menggeser commit base. 
+
+1. Pembuatan branch baru yaitu feature
+
+2. Branch pada master/main melakukan commit baru
+
+3. Melakukan Git Rebase untuk menggeser commit base ke posisi terakhir dari commit pada branch master/main
+
+●  Hooks
+
+Git memiliki hooks, yaitu script yang dijalankan secara otomatis saat terjadi peristiwa tertentu di dalam Git, seperti commit atau push.
+
+
+● GUI tools
+
+Git menyediakan GUI tools, seperti GitKraken dan Sourcetree, untuk memudahkan penggunaan Git bagi pengguna yang kurang terbiasa dengan command line
+
+ 3.  Keunggulan dan kelemahan Git
+
+  ●  Kelebihan
+
+○  Dapat mengelola versi kode sumber dengan mudah dan efisien.
+
+○  Dapat melakukan branching dan merging dengan mudah dan aman.
+
+○  Dapat melacak perubahan dan siapa yang membuat perubahan pada source code.
+
+○  Memiliki performa yang cepat dan stabil dalam pengelolaan kode sumber yang besar.
+
+●  Kelemahan
+
+○   Memiliki fitur yang kompleks dan terkadang membingungkan bagi pengguna yang kurang berpengalaman.
+
+○  Memerlukan pemahaman yang baik tentang konsep dasar seperti repository, commit, branching, dan merging.
+
+○  Sulit digunakan untuk pengelolaan file biner atau non-teks, seperti gambar atau video.
+
+ 4. Instalasi Git
+
+●  Buka halaman download Git di https://git-scm.com/downloads
+
+●  Pilih versi Git yang sesuai untuk sistem operasi Anda (Windows, Mac, atau Linux)
+
+●  Klik link download untuk mulai mengunduh instalator Git.
+
+●  Setelah unduhan selesai, buka file instalator dan ikuti instruksi yang muncul pada layar.
+
+●  Selama proses instalasi, Anda dapat memilih komponen yang ingin diinstal dan direktori tempat Git akan diinstal.
+
+●  Setelah instalasi selesai, Anda dapat memverifikasi instalasi Git dengan membuka terminal (command prompt di Windows) dan mengetikkan perintah git --version. Jika Git terinstal dengan benar, versi Git yang terpasang akan ditampilkan.
+
+
+ 2.  Gitlab
+   1.  Pengenalan
+
+Gitlab merupakan salah satu layanan yang menyediakan layanan akses remote ke Git repositories. Gitlab juga dapat meng-hosting project akan tetapi bersifat static. Gitlab mempermudah para developer dalam mengembangkan software dengan menyediakan manajemen internal git repositories. Untuk saat ini gitlab sudah memiliki 4 versi, yaitu:
+
+● Gitlab Enterprise Edition
+
+Gitlab enterprise edition merupakan versi lain dari github CE yang memiliki fitur tambahan. Gitlab enterprise edition sangat cocok untuk proyek proyek besar yang membutuhkan fitur tambahan seperti audit log, management workflow, serta keamanan tinggi.
+
+● Gitlab.com
+
+Gitlab.com merupakan gitlab enterprise edition (Gitlab EE) yang berjalan pada server milik gitlab. Gitlab.com ini memuat semua fitur yang ada pada Gitlab CE dan Gitlab EE. Keunggulan dari gitlab.com ini ialah untuk membuat repository private dan public tidak terbatas dan juga dapat berkolaborasi dengan banyak orang tanpa terbatas.
+
+● Gitlab Community edition (Gitlab CE)
+
+Gitlab CE merupakan versi open-source dari gitlab. Source code yang ada di dalam gitlab CE dapat terlihat oleh semua orang dan dapat digunakan oleh semua orang juga. Gitlab CE ini dapat digunakan pada sistem operasi seperti Ubuntu, Debian, CentOS dan Raspbian Wheezy.
+
+● Gitlab CI
+
+Gitlab CI adalah singkatan dari GitLab Continuous Integration. Fungsi jenis ini dari Gitlab adalah untuk melakukan suatu pengujian, membuat versi build, dan melakukan deploy dari source code yang telah kita unggah ke Gitlab. 
+ 
+      
+  2. Keunggulan Gitlab
+
+●  Pemrosesan CI/CD yang mudah digunakan
+
+●  Tingkat keamanan yang tinggi
+
+●  Fitur kolaborasi yang lebih unggul
+
+
+  3.  Kekurangan Gitlab
+
+●  Susah untuk dipelajari pemula
+
+●  Konfigurasi yang rumit
+
+●  Tidak gratis sepenuhnya
+
+  4.  Membuat repository di gitlab
+     
+●  Login ke akun GitLab Anda.
+
+●  Klik tombol "New Project".
+
+●  Pilih opsi "Create blank project".
+
+●  Isikan nama untuk project Anda dan deskripsi opsional (optional).
+
+●  Pilih visibilitas project Anda. Anda dapat memilih public atau private.
+
+●  Pilih opsi "Initialize repository with a README" jika Anda ingin membuat README file.
+
+●  Klik tombol "Create project" untuk membuat project baru.
+
+
+
+
+  3.  Github
+        Pengenalan
+
+Github merupakan salah satu layanan hosting git repository. Github juga memungkinkan para developer untuk mengelola source code-nya dengan version control system milik github atau lebih mudahnya github merupakan manajemen project, sistem versioning code, sekaligus platform jejaringan sosial bagi para developer seluruh dunia.
+
+Github juga terintegrasi dengan layanan seperti amazon, Google Cloud dan code climate, yang mana github dapat menampung sintaks dari 200 bahasa pemrograman yang tidak sama. Github memiliki 3 fitur penting yaitu forking, pull request dan merging.
+
+● Forking
+
+Forking repository ialah membuat proyek baru berdasarkan repository yang sudah ada. Sederhananya forking repository merupakan menyalin repository yang sudah ada dan melakukan perubahan sesuai yang diinginkan kemudian menyimpan versi terbaru di repository baru dan menjadikan proyek itu menjadi milik proyek sendiri.
+
+● Pull Request
+
+Pull request adalah ketika Anda menginformasikan user bahwa Anda sudah memindahkan perubahan yang Anda lakukan di branch ke master repository. Collaborator repositori akan menerima atau menolak pull request. Segera setelah pull request diterima, Anda bisa mendiskusikan dan mengulas proyek bersama dengan collaborator. Berikut beberapa langkah untuk membuat pull request di GitHub:
+
+○ Masuk ke repositori dan cari menu branch.
+
+○ Di menu branch, pilih branch yang menyimpan commit Anda.
+
+○ Klik opsi New pull request yang ada di samping menu branch.
+
+○ Masukkan judul dan deskripsi pull request.
+
+○ Klik opsi Create pull request.
+
+● Merging
+
+Merging merupakan penggabungan source code yang sudah diubah pada suatu branch ke branch lainnya. Jadi, setelah melakukan pengubahan pada source code di branch feature dan sudah dilakukan testing, dapat langsung memasukkannya pada repository utama dengan merge.
+
+        Keunggulan Github
+
+●  Github gratis digunakan
+
+●  proyek atau kode kita bisa diakses oleh pengguna lain,yang nantinya akan bermanfaat bagi kita untuk meningkatkan proyek kita tersebut.
+
+●  github dapat melacak perubahan yang terjadi di changelog,tentunya hal ini kita akan mengetahui perubahan apa saja yang terjadi.
+
+●  dengan adanya github kita bisa akses proyek orang lain yang mungkin akan membangkitkan semangat atau motivasi kita untuk mengerjakan proyek lebih bagus.
+
+●  mampu mengintegrasikan Development IDE seperti Visual Code Studio,Eclipse,dan lainnya
+
+        Kekurangan Github
+
+●  Keamanan di github tidak berlaku untuk repositori pribadi
+
+●  GitHub memerlukan koneksi internet yang stabil dan cukup cepat untuk mengakses dan menggunakan platform
+
+●  GitHub membatasi pengguna untuk membuat repositori pribadi, sehingga pengguna harus membayar untuk menggunakan repositori pribadi dalam jumlah yang lebih besar.
+
+        Membuat Repository di Github
+
+●  Buka situs web GitHub dan masuk ke akun GitHub.
+
+●  Klik tombol "+" di pojok kanan atas halaman dan pilih new repository
+
+●  Isi nama repository dan pastikan dalam pemberian nama jelas dan deskriptif agar mudah diingat.
+
+●  Jika Anda ingin menambahkan deskripsi untuk repository, isikan pada kolom "Description".
+
+●  Jika ingin membuat repository menjadi publik, pastikan opsi "Public" diatur sebagai opsi terpilih. Jika ingin membuat repository pribadi, pilih opsi "Private" dan pastikan akun GitHub memiliki akses ke fitur ini
+
+●  Pilih lisensi untuk repository Anda (jika diperlukan). GitHub menyediakan beberapa lisensi open source yang dapat Anda pilih.
+
+●  Anda juga dapat menambahkan file README untuk memberikan penjelasan singkat tentang repository Anda.
+
+●  Klik tombol "Create Repository" untuk membuat repository baru.
+
+
+
+
